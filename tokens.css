@@ -10,6 +10,7 @@
  --color-wall:#d6d5c4;--color-wall-dark:#9ea399;--color-roof:#9d4b39;--color-shadow:#34453255;
  --color-toolbar-top:#aeb9c3;--color-toolbar-bottom:#7f8d99;--color-toolbar-shadow:#38432f;--color-hud:#35413d;--color-hud-edge:#657069;--color-hud-deep:#1f2824;--color-hud-copy:#fff5cf;--color-hud-muted:#cbd4c6;
  --color-button-top:#fff4d3;--color-button-bottom:#d9c596;--color-button-ink:#302f27;--color-button-edge:#4e4b3f;--color-button-shine:#fff8e5;--color-button-shadow:#3338;--color-map-label:#fff1bd;--color-map-help:#334139cc;--color-map-help-ink:#f8edca;
+ --color-stop:#9b6728;--color-stop-ink:#fff7dd;--color-warning-paper:#f1d2ac;
  --color-panel-edge:#69624d;--color-panel-shadow:#3f493a66;--color-progress-edge:#645c47;--color-progress-track:#b8a87d;--color-reading:#625d4f;--color-note-edge:#746d59;--color-note:#f6e9c6;--color-rule-soft:#a79b77;--color-rule-mid:#bbaa7d;--color-rule-detail:#a99e7c;--color-limit:#5a5143;--color-link:#385d42;--color-route-edge:#81785f;--color-route:#f4e6bd;--color-dock:#e7d7aa;
  --font-display:"Trebuchet MS","Segoe UI",Verdana,sans-serif;--font-body:"Trebuchet MS","Segoe UI",Verdana,sans-serif;--font-mono:Menlo,Consolas,monospace;
  --space-xs:4px;--space-sm:8px;--space-md:12px;--space-lg:16px;--space-xl:24px;
