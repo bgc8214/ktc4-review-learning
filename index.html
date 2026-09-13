@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>리뷰로 배우는 개발 노트</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<button class="skip" id="skip">본문으로 이동</button>
+<header><a href="#ports" class="brand">리뷰로 배우는 개발 노트</a><span>낯선 리뷰 용어를 실제 상황과 코드로 이해하기</span></header>
+<div class="layout">
+<aside><div class="start-here"><strong>처음이라면</strong><p>목록에서 개념 하나를 고른 뒤, 위에서 아래로 따라가세요. 5~10분이면 한 개념을 볼 수 있습니다.</p></div><label for="search">개념 찾기</label><input id="search" type="search" placeholder="예: 세션, 포트, 트랜잭션"><nav id="topics" aria-label="개념 목록"></nav><a class="game-link" href="./game.html"><strong>그림으로 직접 실험하기</strong><span>토큰·동전·보관함을 조작하며 이해해요 →</span></a><button id="archive-button">전체 리뷰 원문 읽기</button><p class="aside-note">수집된 PR 23건 · 원문 기준 2026.09.13<br>학습 설명은 원문의 정답 복사가 아니라, 공식 자료와 실행 예시로 다시 검토한 내용입니다.</p></aside>
+<main id="lesson" tabindex="-1"><p>학습 자료를 불러오는 중입니다…</p></main>
+</div>
+<dialog id="reader"><div class="reader-head"><h2 id="reader-title">리뷰 원문</h2><button id="close-reader" aria-label="원문 닫기">닫기 ×</button></div><label for="doc-select">문서 선택</label><select id="doc-select"></select><label for="source-search">원문 안에서 찾기</label><input id="source-search" type="search" placeholder="단어 입력 후 Enter"><p id="source-status" aria-live="polite"></p><p class="source-notice">수집 시점의 원문입니다. 작성자의 주장에는 오류가 있을 수 있습니다. 아래는 학습 설명이 아닌 실제 발언입니다.</p><div id="source-body"></div></dialog>
+<script type="module" src="./app.js"></script>
+</body></html>

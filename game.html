@@ -1,0 +1,25 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>시스템 파크 · 만져보는 CS</title><link rel="stylesheet" href="./tokens.css"><link rel="stylesheet" href="./game.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="./game.html"><span class="brand-mark"></span>시스템 파크</a><div class="hud"><span><small>완료 시설</small><b id="completed">0 / 6</b></span><span><small>방문 시설</small><b id="visited">1 / 6</b></span><span><small>현재 화물</small><b id="cargo">요청 A·B</b></span><span><small>실행 횟수</small><b id="runs">0</b></span></div><a class="notes" href="./" aria-label="리뷰 학습 노트"><span class="notes-full">리뷰 학습 노트</span><span class="notes-short" aria-hidden="true">노트</span></a><button id="guideToggle">가이드 숨기기</button></header>
+<main class="park-shell">
+ <section class="stage" aria-label="등각 투영 시스템 공원">
+  <canvas id="park" role="img" aria-label="여섯 개 백엔드 시설이 도로로 연결된 시스템 공원"></canvas>
+  <div class="act-name" id="actName">투어 1 · 인증과 안전</div>
+  <div class="zoom"><button id="zoomIn" aria-label="확대">+</button><button id="zoomOut" aria-label="축소">−</button><button id="zoomFit" aria-label="공원 전체 보기">↗</button></div>
+  <div class="map-help">드래그로 이동 · 휠로 확대 · 시설을 눌러 방문</div>
+ </section>
+ <aside class="guide" id="guide">
+  <div class="stop"><span id="stopNo">시설 1 / 6</span><button id="guideClose" aria-label="가이드 닫기">×</button></div>
+  <h1 id="title"></h1><p class="lead" id="problem"></p>
+  <div class="progress"><i id="progressBar"></i></div><p class="reading-stop">자동 시연이 끝나면 다음 시설에 도착해 멈춥니다. 문제를 읽고 직접 조작하세요.</p>
+  <section class="watch"><h2>지도에서 볼 것</h2><p id="observe"></p></section>
+  <section class="mission"><h2>이번 시설 임무</h2><ol id="mission"></ol><p id="completeStamp" hidden>시설 이해 완료 · 다음 시설로 이동하세요.</p></section>
+  <section class="settings"><h2>실험 조건</h2><div id="settings"></div></section>
+  <section class="controls"><h2>시설 조작</h2><div id="actions"></div><p id="message" aria-live="polite"></p><dl id="metrics"></dl></section>
+  <details><summary>왜 이렇게 되나요?</summary><p id="foundation"></p><p class="limit" id="limit"></p></details>
+  <details><summary>학생 PR와 관련 자료</summary><div id="sources"></div></details>
+  <section class="route"><h2>전체 노선 <small>시설을 눌러 이동</small></h2><nav id="stops" aria-label="전체 시설"></nav></section>
+ </aside>
+ <footer class="dock"><button id="play" aria-label="재생 또는 일시정지">❙❙</button><button id="next" aria-label="다음 시설">⇥</button><button id="restart" aria-label="투어 처음부터">⟲</button><label>속도 <input id="speed" type="range" min="0.5" max="2" step="0.5" value="1"><output id="speedOut">1×</output></label><label><input id="follow" type="checkbox" checked> 차량 따라가기</label><label><input id="signs" type="checkbox" checked> 시설 간판</label></footer>
+</main>
+<script type="module" src="./game.js"></script></body></html>
